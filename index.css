@@ -1,0 +1,126 @@
+
+
+
+.title {
+      font-size: 60px;
+      text-align: center;
+      position: fixed;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+      width: 126.5%;
+      left: -13.25%;
+      font-style: italic;
+      color: black;
+      }
+
+
+.survey {
+      font-size: 20px;
+      font-style: italic;
+    }
+
+
+
+
+<div>
+
+.stickytitle {
+      position: fixed;
+      }
+
+
+.text::-webkit-scrollbar {
+  display: none;
+}
+
+.text {
+  text-align: left;
+  position: fixed;
+  margin-top: 2vh;
+  height: 67vh;
+  right: 45vh;
+  left: 45vh;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.text::before {
+    content: "";
+    background-color: white;
+    position: fixed;
+    right: 35vh;
+    padding-top: 2vh;
+    padding-bottom: 67vh;
+    left: 35vh;
+    opacity: 0.80;
+    z-index: -1;
+}
+
+
+.news::-webkit-scrollbar {
+  display: none;
+}
+
+.news {
+  text-align: left;
+  position: fixed;
+  margin-top: 2vh;
+  height: 100vh;
+  right: 45vh;
+  left: 45vh;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.news::before {
+    content: "";
+    background-color: white;
+    position: fixed;
+    right: 35vh;
+    padding-top: 2vh;
+    padding-bottom: 100vh;
+    left: 35vh;
+    opacity: 0.80;
+    z-index: -1;
+}
+
+
+#floated-imgs { 
+  float: right;
+}
+
+#floated-imgs img {display: block; }
+
+
+</div>
+
+
+
+<body>
+  .hero {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .hero::before {
+    content: "";
+    background-image: url("images/background.JPG");
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    z-index: -2;
+  }
+  
+</body>
+
