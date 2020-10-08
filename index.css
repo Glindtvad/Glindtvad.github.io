@@ -58,7 +58,7 @@ img {
     position: fixed;
     right: 20vh;
     padding-top: 2vh;
-    padding-bottom: 75vh;
+    height: 78vh;
     left: 20vh;
     opacity: 0.85;
     z-index: -1;
@@ -73,7 +73,7 @@ img {
   text-align: left;
   position: fixed;
   margin-top: 2vh;
-  height: 75vh;
+  height: 100%;
   right: 30vh;
   left: 30vh;
   overflow-y: scroll;
@@ -87,7 +87,7 @@ img {
     position: fixed;
     right: 20vh;
     padding-top: 2vh;
-    padding-bottom: 80vh;
+    height: 100%;
     left: 20vh;
     opacity: 0.85;
     z-index: -1;
