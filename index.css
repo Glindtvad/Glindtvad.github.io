@@ -1,35 +1,38 @@
 
 
 
-.title {
-      font-size: 60px;
-      text-align: center;
-      position: fixed;
-      padding-top: 40px;
-      padding-bottom: 20px;
-      margin-bottom: 40px;
-      width: 126.5%;
-      left: -13.25%;
-      font-style: italic;
-      color: black;
-      }
 
 
 
 .undertitle {
       font-size: 35px;
-      font-style: italic;
+      font-style: normal;
+      text-align: left;
 }
 
+a {
+  color: navy;
+  
+}
 
 p {
       font-size: 20px;
 }
 
+img {
+  border: 5px solid #555;
+}
+
+.picture {
+    border: 0px solid green;
+}
+
+
 <div>
 
 .stickytitle {
       position: fixed;
+      text-align: center;
       }
 
 
@@ -41,10 +44,10 @@ p {
   text-align: left;
   position: fixed;
   margin-top: 2vh;
-  height: 67vh;
-  right: 45vh;
-  left: 45vh;
-  overflow: scroll;
+  height: 75vh;
+  right: 30vh;
+  left: 30vh;
+  overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -53,11 +56,11 @@ p {
     content: "";
     background-color: white;
     position: fixed;
-    right: 35vh;
+    right: 20vh;
     padding-top: 2vh;
-    padding-bottom: 67vh;
-    left: 35vh;
-    opacity: 0.80;
+    padding-bottom: 75vh;
+    left: 20vh;
+    opacity: 0.85;
     z-index: -1;
 }
 
@@ -70,9 +73,9 @@ p {
   text-align: left;
   position: fixed;
   margin-top: 2vh;
-  height: 90vh;
-  right: 45vh;
-  left: 45vh;
+  height: 75vh;
+  right: 30vh;
+  left: 30vh;
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -82,11 +85,11 @@ p {
     content: "";
     background-color: white;
     position: fixed;
-    right: 35vh;
+    right: 20vh;
     padding-top: 2vh;
-    padding-bottom: 100vh;
-    left: 35vh;
-    opacity: 0.80;
+    padding-bottom: 80vh;
+    left: 20vh;
+    opacity: 0.85;
     z-index: -1;
 }
 
@@ -103,6 +106,39 @@ p {
   margin-right: auto;
 }
 
+
+
+
+
+
+
+
+
+
+.yep {
+  background-color: #ccc;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it ¤3(hover) */
+/*.active, .yep:hover {
+/*  background-color: navy
+/*}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 
 
 </div>
@@ -128,7 +164,7 @@ p {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: 0.80;
     z-index: -2;
   }
   
