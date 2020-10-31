@@ -1,2 +1,0 @@
-# Glindtvad.github.io
- website
