@@ -2,7 +2,7 @@
 
 
 .undertitle {
-      font-size: 30px;
+      font-size: 1.75vw;
       font-style: normal;
       text-align: left;
 }
@@ -13,7 +13,8 @@ a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1vw;
+  line-height: 2;
 }
 
 img {
@@ -28,7 +29,7 @@ img {
 <div>
 
 .stickytitle {
-      position: fixed;
+      position: static;
       text-align: center;
       }
 
@@ -36,6 +37,10 @@ img {
   display: none;
 }
 
+
+.text::-webkit-scrollbar {
+  display: none;
+}
 
 .text {
   text-align: left;
@@ -62,33 +67,86 @@ img {
 }
 
 
-.news::-webkit-scrollbar {
+.research::-webkit-scrollbar {
   display: none;
 }
 
-.news {
+.research {
   text-align: left;
-  position: absolute;
+  position: static;
   margin-top: 2vh;
   height: 70%;
-  right: 30vh;
-  left: 30vh;
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-.news::before {
+.research::before {
     content: "";
     background-color: white;
-    position: fixed;
-    right: 20vh;
+    position: absolute;
+    height: 200%;
+    right: 40vh;
+    left: 40vh;
     padding-top: 2vh;
-    height: 100%;
-    left: 20vh;
     opacity: 0.85;
     z-index: -1;
 }
+
+
+.projects::-webkit-scrollbar {
+  display: none;
+}
+
+.projects {
+  text-align: left;
+  position: fixed;
+  height: 90%;
+  right: 40vh;
+  left: 40vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.projects::before {
+    content: "";
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    left: 30vh;
+    right: 30vh;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+
+.surveys::-webkit-scrollbar {
+  display: none;
+}
+
+.surveys {
+  text-align: left;
+  position: static;
+  margin-top: 2vh;
+  height: 70%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.surveys::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    right: 40vh;
+    left: 40vh;
+    padding-top: 2vh;
+    opacity: 0.85;
+    z-index: -1;
+}
+
 
 
 #floated-imgs { 
