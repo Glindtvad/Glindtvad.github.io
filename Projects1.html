@@ -11,7 +11,7 @@
 
 
 
-<title>Projects.utf8</title>
+<title>Projects1.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -287,7 +287,6 @@ $(document).ready(function () {
 
 
 <body class="hero">
-<div class="projects">
 <p style="font-size: 3vw; text-align: center; margin-top: 2vh; font-style: italic;">
 Research Projects
 </p>
@@ -354,24 +353,15 @@ The objective of this project was to examine the effects of a high protein and a
 </div>
 </div>
 <script>
-var acc = document.getElementsByClassName("yep");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+jQuery(window).scroll(function(){
+    var fromTopPx = 200; // distance to trigger
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTopPx){
+        jQuery('html').addClass('scrolled');
+    }else{
+        jQuery('html').removeClass('scrolled');
     }
-  });
-}
+});
 </script>
 </body>
 

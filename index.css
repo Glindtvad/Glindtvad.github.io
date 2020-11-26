@@ -1,4 +1,21 @@
 
+html {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html {
+    background-image:url(http://robt.info/wp-content/uploads/2013/06/funny-kids-comic-animals.jpg);
+}
+
+html.scrolled {
+    background-image:url(http://ringvemedia.com/server//bg.jpg);
+}
 
 
 
