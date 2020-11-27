@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Projects.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="index.css" type="text/css" />
+<link rel="stylesheet" href="w3.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Sebastian Glindtvad</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Research.html">Research Interests</a>
+</li>
+<li>
+  <a href="Projects.html">Projects</a>
+</li>
+<li>
+  <a href="Surveys.html">Surveys</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<body class="hero">
+<div class="projects">
+<p style="font-size: 3vw; text-align: center; margin-top: 2vh; font-style: italic;">
+Research Projects
+</p>
+</p>
+<p class="undertitle" style="font-size: 1.5vw;font-style: normal; text-align: left; margin-top: 2vw">
+Diet analysis of NEA Saithe
+</p>
+<p style="padding-top: 1">
+Co-Supervisor for exchange student from Bangor University, investigating the diet profile of NEA Saithe in Norwegian waters in collaboration with IMR. As part of the exchange program, the student would joined annual surveys and do a study in collaboration with IMR researchers. The student designed the study with me along with different preparations and previous data. Currently reviewing the manuscript for publication.
+</p>
+<p class="undertitle" style="font-size: 1.5vw;font-style: normal; text-align: left; margin-top: 2vw">
+Effect of Diet on otolith shape in Atlantic cod
+</p>
+<p style="padding-top: 1">
+A study I presented as an addition to an ongoing project between my old supervisor at Aarhus University and the demersal group at IMR. Several atlantic cod bred in captivity was reared over a six month period on different diets. The study is aimed for publication in primo 2021 at the latest.
+</p>
+<p class="undertitle" style="font-size: 1.5vw;font-style: normal; text-align: left; margin-top: 2vw">
+Greenland shark (<i>Somniosus microcephalus</i>) catches in fisheries conducted in the Northwest Atlantic Fisheries Organization Regulatory Area
+</p>
+<p style="padding-top: 1">
+While an intern at NAFO in 2018, I helped with various projects and preparations. One such project was a spatio-temporal analysis of greenland shark bycatches in the NAFO regulated fishing areas. I did this study with Lisa Hendrickson from the National Oceanic and Atmospheric Administration, US. The resulting analysis was published as a Scientific Counncil Research document, and was presented at the NAFO annual Scientific Council meeting. The study is still being conducted with increased spatial quality. The full SCR document can be found <a href="https://www.nafo.int/Portals/0/PDFs/sc/2018/scr18-020REV2.pdf">here</a>.
+</p>
+<button class="yep">
+<p>
+<b>Abstract</b>
+</p>
+</button>
+<div class="panel">
+<p>
+The Greenland shark (<i>Somniosus microcephalus</i>), a large, benthopelagic shark, has been listed as “Near Threatened” on the International Union for the Conservation of Nature and Natural Resources (IUCN) Red List since 2006. The IUCN-recommended conservation actions includedocumentation of catches in North Atlantic and Arctic fisheries and determination of fisheries-related population declines. This report isa response, in part, to a request from the Fisheries Commission ofthe Northwest Atlantic FisheriesOrganization (NAFO)to the Scientific Council fordocumentation ofGreenland shark catchesin NAFO fisheries and summarization ofexisting data useful for assessingthe status of the population inhabiting NAFO waters.We found thatnominal catches of Greenland sharkhave beenreported to NAFO since2002, but reporting was inconsistent.Catches ranged from 1 tin 2002 and 2004 to71 tin2017; 69% of the catches during 2002-2017 werefrom Subarea 1.NAFO Observer Programdata indicatedthatbycatch of Greenland shark in the NAFO Regulatory Area increased rapidly between 2014 and 2017, from 34t to 281t and from at least75 to 180 individuals, respectively.Most of the bycatchduring 2014-2017,89% of the weightand 67% of thenumbers, occurred in bottom trawls andthe remainder occurred onlonglines.Total bycatch numbers(representing minimums)werehighest (43%) in the Greenland halibut bottom trawl fishery, mainly in Division 3L, followed by the Atlantic halibut longline fishery (26%), mainly in Division 3N,and the redfish bottom trawl fishery (19%), mainly in Divisions 3Mand 3N. Bycatch weight was also highest in the Greenland halibut bottom trawl fishery (52%),followed by the redfish bottom trawl fishery (27%), andthe Atlantic halibut longline fishery (8%).The inconsistent reporting of nominal catches of Greenland sharks should be remediedand we also suggestimprovements to the collection of Greenland shark bycatch data by NAFO observers.These recommendations will improve our knowledge about the Greenland shark population inhabitingthe Northwest Atlantic Ocean and many of the recommendationscan be implemented now.
+</p>
+</div>
+<p class="undertitle" style="font-size: 1.5vw;font-style: normal; text-align: left; margin-top: 2vw">
+Morphometric Analysis of Cod (<i>Gadus morhua</i>) Otoliths
+</p>
+<p style="padding-top: 1">
+My master’s thesis was a joint project between the Institute for Natural Resources in Greenland and the University of Aarhus. My thesis was a study on the use of otolith shape discrimination of different Atlantic cod stocks in Greenland waters. The thesis consists of areview of Atlantic cod stocks, otolith research and the theory behind statistical shape analysis, ending with an article manuscript of my study. The full thesis can be found <a href="files/Master's thesis.pdf">here</a>.
+</p>
+<button class="yep">
+<p>
+<b>Abstract</b>
+</p>
+</button>
+<div class="panel">
+<p>
+Four genetically different populations of cod (<i>Gadus morhua</i>) inhabit the waters along the coast of Greenland. These populations share habitats on the west coast, and current available fishery management tools for population separation are restricted to Genetic classification. As genetic classification is both time consuming and expensive, alternative classification methods are need. In this study, the use of otolith outline shape analysis as a tool for population separation was investigated. Both Discrete Wavelet Transform and Normalized Elliptic Fourier were used. The whole outline of the otolith, as well as the outline of the 1st and 2nd year increments were used for shape analysis. Normalized Elliptic Fourier showed more potential than the Discrete Wavelet Transform for populations classification. Two out of the three populations could be classified with a high mean classification rate (&gt;70%). The 1st and 2nd year increments provided a lower mean classification success (&lt;65%) than the whole shape of the otolith. Neither genetics nor environment were found to have a significant influence on the whole otolith shape. Age group separated shape analysis indicated a possible migration from inshore areas to offshore areas by the West Greenland Offshore cod population. Further studies should be done to investigate a combination of shape analysis and other population classification methods for fishery management purposes.
+</p>
+</div>
+<p class="undertitle" style="font-size: 1.5vw;font-style: normal; text-align: left; margin-top: 2vw">
+Australian Weaver ants on different diets
+</p>
+<p style="padding-top: 1">
+My bachelor project was a study in behavioral biology on the effect of high protein and sugar diets on the activity and mortality of worker ants from the species Australian Weaver ants. The study resulted in an article manuscript in danish. The study can be found <a href="files/bachelor.pdf">here</a>.
+</p>
+<button class="yep">
+<p>
+<b>Abstract</b>
+</p>
+</button>
+<div class="panel">
+<p>
+The objective of this project was to examine the effects of a high protein and a high sugar diet on the rate of consumption, foraging activity, and mortality of the Australian Weaver Ant (<i>Oecophylla smaragdina</i>). Each small colony of ants were fed with one of three specific diets, a Bhatkar diet for control, a high-protein or a high-sugar derivative. On the basis of the collected data: consumption, activity and mortality for each colony were calculated in order to ascertain the effect of each diet, on the workers behavior and mortality ratio. The result of these calculations showed a significant increase in the mortality ratio for workers fed with the high-protein diet as opposed to mortality ratio of the other diets. The ant workers feeding on high-protein diet also proved to have a significant increase in rate of consumption, when compared to the workers fed with the high-sugar diet. Additionally workers fed with the high-sugar diet, displayed a significant increase in activity, when compared to workers on the high-protein diet or the standard Bhatkar diet.
+</p>
+</div>
+</div>
+<script>
+var acc = document.getElementsByClassName("yep");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

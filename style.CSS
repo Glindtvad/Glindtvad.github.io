@@ -18,10 +18,9 @@ html::-webkit-scrollbar {
 }
 
 .undertitle {
-      font-size: 36px;
+      font-size: 24px;
       font-family: Cambria, Georgia, serif;
       text-align: left;
-      padding-left: 10%;
 }
 
 .text {
@@ -45,6 +44,44 @@ html::-webkit-scrollbar {
 }
 
 
+
+
+ul.topnav {
+  list-style-type: none;
+  top: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+
+
+
+
 /* Navigational Bar */
 .navbar {
   overflow: hidden;
@@ -53,7 +90,7 @@ html::-webkit-scrollbar {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 2;
 }
 
 .navbar a {
@@ -99,16 +136,28 @@ body.scrolled {
 
 /* White text backgrounds, and filler parts */
 
+.toptextarea::-webkit-scrollbar {
+  display: none;
+}
+
 
 .toptextarea {
   background-color: white;
   position: relative;
   width: 100%;
-  top: 40%;
-  padding: 5%;
+  top: 0px;
+  margin-top: -20vh;
   opacity: 1;
   z-index: 1;
+  padding: 1%;
 }
+
+
+
+.textarea::-webkit-scrollbar {
+  display: none;
+}
+
 
 .textarea {
   background-color: white;
@@ -117,16 +166,15 @@ body.scrolled {
   top: 0px;
   opacity: 1;
   z-index: 1;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 1%;
 }
 
 
 .videos_gif {
     display: block;
     width: 100vw;
+    margin: 0;
     height: auto;
-    padding-bottom: -20%;
     z-index: -1;
     position: static;
     text-align: center;
@@ -187,10 +235,9 @@ body.scrolled {
 .active, .active:hover {
     fill: #7ac8ff !important;
 }
-
 #provinceInfo {
     position: absolute;
-    top: 30%; right: 25%;
+    top: 5%; right: 25%;
     width: 50%;
     background: rgba(0,0,0,0.3);
     pointer-events: none;
