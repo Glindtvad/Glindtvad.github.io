@@ -756,7 +756,7 @@
                         var provinceName = province.querySelector("title").innerHTML,
                         provincePara = province.querySelector("desc p");
                         sourceImg = province.querySelector("img"),
-                        imgPath = "./images/";
+                        imgPath = "";
                         WorldInfo.innerHTML = "";
                         WorldInfo.insertAdjacentHTML("afterbegin", "<img src="+imgPath + sourceImg.getAttribute('xlink:href')+" alt='"+sourceImg.getAttribute('alt')+"'><h1>"+provinceName+"</h1><p>"+provincePara.innerHTML+"</p>");
                         WorldInfo.classList.add("show");
