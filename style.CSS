@@ -86,9 +86,6 @@ html::-webkit-scrollbar {
 
 /* Background change by scrolling down */
 body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
