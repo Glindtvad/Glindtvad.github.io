@@ -13,21 +13,23 @@ html::-webkit-scrollbar {
 .main_title {
     font-size: 65px;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: -1.5%;
+    margin-bottom: 4.5%;
     font-family: Cambria, Georgia, serif;
+    z-index: 2;
 }
 
 .undertitle {
-      font-size: 24px;
+      font-size: 36px;
       font-family: Cambria, Georgia, serif;
       text-align: left;
+      padding-left: 10%;
 }
 
 .text {
     font-size: 22px;
     font-family: Cambria, Georgia, serif;
     text-align: left;
-    margin-right: 10vw;
     padding-left: 10%;
     line-height: 1.5;
 }
@@ -44,75 +46,49 @@ html::-webkit-scrollbar {
 }
 
 
-
-
-ul.topnav {
-  list-style-type: none;
-  top: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul.topnav li {
-    float: left;
-}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
-
-ul.topnav li.right {
-  float: right;
-}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right,
-  ul.topnav li {float: none;}
-}
-
-
-
-
 /* Navigational Bar */
 .navbar {
   overflow: hidden;
-  background-color:  #1b4f72;
+  background: transparent; /*brugte tidliger "linear-gradient(to right, #196FF6 0%, #0D2B61 20%, #000000 100%)"*/
   text-align: center;
   position: fixed;
-  top: 0;
+  border: none;
+  padding-top: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  border-radius: 25%;
+  top: 0%;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navbar a {
   float: none;
-  display: inline-block;
-  color:  black;
+  display: inline;
+  color: #0a224e;
+  background-color: transparent;
+    border: none;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 20px;
+  border-radius: 30%;
   text-decoration: none;
+  font-family: serif;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  background:  #2e86c1 ;
-  color: black;
+  background:  black;
+  color: #2DB4CA;
 }
-
-
 
 
 /* Background change by scrolling down */
 body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -120,6 +96,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: transparent;
   margin: 0;
   z-index: -2;
 }
@@ -136,45 +113,34 @@ body.scrolled {
 
 /* White text backgrounds, and filler parts */
 
-.toptextarea::-webkit-scrollbar {
-  display: none;
-}
-
 
 .toptextarea {
-  background-color: white;
+  background-color: rgb(230, 230, 230);
   position: relative;
   width: 100%;
-  top: 0px;
-  margin-top: -20vh;
+  top: 40%;
+  padding: 5%;
   opacity: 1;
   z-index: 1;
-  padding: 1%;
 }
-
-
-
-.textarea::-webkit-scrollbar {
-  display: none;
-}
-
 
 .textarea {
-  background-color: white;
+  background-color: #f0f8fd;
   position: relative;
   width: 100%;
-  top: 0px;
+  top: 0%;
   opacity: 1;
   z-index: 1;
-  padding: 1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 
 .videos_gif {
     display: block;
     width: 100vw;
-    margin: 0;
     height: auto;
+    padding-bottom: -20%;
     z-index: -1;
     position: static;
     text-align: center;
@@ -218,10 +184,11 @@ body.scrolled {
 
 
 #canada-map {
-    background: #ffffff;
+    background: #f0f8fd;
     stroke: black;
     fill: #C0C0C0;
     opacity: 1;
+    margin-top: -5%;
 
 }
 #canada-map g {
@@ -235,9 +202,10 @@ body.scrolled {
 .active, .active:hover {
     fill: #7ac8ff !important;
 }
+
 #provinceInfo {
     position: absolute;
-    top: 5%; right: 25%;
+    top: 2%; right: 25%;
     width: 50%;
     background: rgba(0,0,0,0.3);
     pointer-events: none;
@@ -254,7 +222,7 @@ body.scrolled {
 }
 
 #provinceInfo h1 {
-    background: hsl(240, 55%, 40%);
+    background: hsl(240, 64%, 9%);
     padding: .3rem;
     padding-left: 1rem;
     margin-top: -.5rem;
