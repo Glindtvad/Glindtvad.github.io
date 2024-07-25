@@ -99,11 +99,11 @@ body {
 }
 
 body {
-   background-image:url("./images/bg2.jpg");
+   background-image:url("Images/bg2.JPG");
 }
 
 body.scrolled {
-   background-image:url("./images/bg1.jpg");
+   background-image:url("Images/bg1.JPG");
 }
 
 
