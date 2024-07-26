@@ -251,6 +251,9 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
   body{
     width: 100%;
   }
+  .navbar{
+    width: 100%;
+  }
   #textarea
 #provinceInfo.show p { color: #000 !important; margin-bottom: 2rem; }
 }
