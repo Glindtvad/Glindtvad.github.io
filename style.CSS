@@ -243,28 +243,6 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
 
 
 
-  /* if desktop */
-  .mobile_device_380px {
-    display: none;
-}
-.mobile_device_480px {
-    display: none;
-}
-
-
-/* if mobile device max width 380px */
-@media only screen and (max-device-width: 380px) {
-    .mobile_device_380px{display: block;}       
-    .desktop {display: none;}
-} 
-
-/* if mobile device max width 480px */
-@media only screen and (max-device-width: 460px) {
-   .mobile_device_460px{display: block;}
-   .desktop {display: none;}
-}
-
-
 
 @media all and (max-width: 750px) {
   #provinceInfo {
