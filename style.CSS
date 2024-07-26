@@ -248,7 +248,13 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
   #provinceInfo {
    width: 100%; position: static; background: none;
   }
+  #navbar{
+    width: 100%;
+  }
   #body{
+    width: 100%;
+  }
+  #body.scrolled{
     width: 100%;
   }
   #provinceInfo.show p { color: #000 !important; margin-bottom: 2rem; }
