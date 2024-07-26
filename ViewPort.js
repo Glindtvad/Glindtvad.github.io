@@ -13,3 +13,11 @@ jQuery(window).resize(function(){
       'font-size' : vw + 'px'
   });
 });
+
+
+function getViewportUnits(){
+  const text = document.getElementsByClassName("text");
+  const vh = text.getBoundingClientRect().height;
+  const vw = text.getBoundingClientRect().width;
+  console.log({vh: vh, vw: vw});
+}
