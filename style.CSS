@@ -27,7 +27,7 @@ html::-webkit-scrollbar {
 }
 
 .text {
-    font-size: 1px;
+    font-size: 20vw;
     font-family: Cambria, Georgia, serif;
     text-align: left;
     padding-left: 10%;
