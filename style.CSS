@@ -12,7 +12,7 @@ html::-webkit-scrollbar {
 }
 
 .main_title {
-    font-size: 65px;
+    font-size: 60;
     text-align: center;
     margin-top: -1.5%;
     margin-bottom: 4.5%;
@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
 }
 
 .undertitle {
-    font-size: 44px;
+    font-size: 40px;
     font-family: Cambria, Georgia, serif;
     text-align: left;
     padding-left: 10%;
@@ -29,7 +29,7 @@ html::-webkit-scrollbar {
 
 
 .text{
-  font-size: 20px; 
+  font-size: 26px; 
   font-family: Cambria, Georgia, serif;
   text-align: left;
   padding-left: 10%;
@@ -51,15 +51,15 @@ html::-webkit-scrollbar {
 /* Navigational Bar */
 .navbar {
   overflow: hidden;
-  background: transparent; /*brugte tidliger "linear-gradient(to right, #196FF6 0%, #0D2B61 20%, #000000 100%)"*/
+  background: #6bebff6e; /*brugte tidliger "linear-gradient(to right, #196FF6 0%, #0D2B61 20%, #000000 100%)"*/
   text-align: center;
   position: fixed;
   border: none;
-  padding-top: 0vh;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
-  border-radius: 25%;
+  padding-top: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+  border-radius: 0%;
   top: 0%;
   width: 100%;
   z-index: 3;
@@ -261,7 +261,7 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
 @media only screen and (max-device-width: 480px) {
 
   .main_title {
-      font-size: 20px;
+      font-size: 30px;
       text-align: center;
       margin-top: -1.5%;
       margin-bottom: 4.5%;
@@ -270,7 +270,7 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
   }
   
   .undertitle {
-      font-size: 25px;
+      font-size: 20px;
       font-family: Cambria, Georgia, serif;
       text-align: left;
       padding-left: 10%;
@@ -278,7 +278,7 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
   
   
   .text{
-    font-size: 10px; 
+    font-size: 12px; 
     font-family: Cambria, Georgia, serif;
     text-align: left;
     padding-left: 10%;
