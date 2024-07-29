@@ -104,11 +104,11 @@ body {
 }
 
 body {
-   background-image:url("Images/bg2.JPG");
+   background-image:url("images/bg2.JPG");
 }
 
 body.scrolled {
-   background-image:url("Images/bg1.JPG");
+   background-image:url("images/bg1.JPG");
 }
 
 
@@ -346,18 +346,18 @@ body>header{background:#f3f2f2;line-height:1;padding:.2rem 1rem}@media all and (
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 480px 854px;
+    background-size: 480px 680px;
     background-color: transparent;
     margin: 0;
     z-index: -2;
   }
   
   body {
-     background-image:url("Images/bg2.JPG");
+     background-image:url("images/bg2.JPG");
   }
   
   body.scrolled {
-     background-image:url("Images/bg1.JPG");
+     background-image:url("images/bg1.JPG");
   }
   
   
